@@ -43,7 +43,7 @@ var Room = {
 		'hut': {
 			name: _('hut'),
 			button: null,
-			maximum: 20,
+			maximum: 100,
 			availableMsg: _("builder says there are more wanderers. says they'll work, too."),
 			buildMsg: _('builder puts up a hut, out in the forest. says word will get around.'),
 			maxMsg: _('no more room for huts.'),
@@ -360,14 +360,14 @@ var Room = {
 		'scales': {
 			type: 'good',
 			cost: function () {
-				return { fur: 150 };
+				return { fur: 25 };
 			},
 			audio: AudioLibrary.BUY_SCALES
 		},
 		'teeth': {
 			type: 'good',
 			cost: function () {
-				return { fur: 300 };
+				return { fur: 35 };
 			},
 			audio: AudioLibrary.BUY_TEETH
 		},
@@ -375,7 +375,7 @@ var Room = {
 			type: 'good',
 			cost: function () {
 				return {
-					'fur': 150,
+					'fur': 50,
 					'scales': 50
 				};
 			},
